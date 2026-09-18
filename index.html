@@ -1019,19 +1019,25 @@
                 </div>
 
                 <div>
+                    <label for="modalDate" class="block text-xs font-semibold text-stone-700 mb-1">Data de Preferência</label>
+                    <input type="date" id="modalDate" required onchange="validateBookingDate()" class="w-full px-4 py-2.5 rounded-xl border border-stone-200 text-sm focus:ring-2 focus:ring-brand-500 focus:outline-none bg-white">
+                    <p id="modalDateHint" class="text-[11px] text-stone-500 mt-1">Segunda a sexta 09h–18h · Sábado 09h–13h · Domingo fechado</p>
+                </div>
+
+                <div>
                     <label class="block text-xs font-semibold text-stone-700 mb-1">Melhor Turno para Atendimento</label>
                     <div class="grid grid-cols-3 gap-2">
                         <label class="border border-stone-200 rounded-xl p-2.5 text-center cursor-pointer hover:border-brand-500 flex items-center justify-center gap-1">
                             <input type="radio" name="period" value="Manhã (09h - 12h)" checked class="text-brand-600">
                             <span class="text-xs text-stone-700">Manhã</span>
                         </label>
-                        <label class="border border-stone-200 rounded-xl p-2.5 text-center cursor-pointer hover:border-brand-500 flex items-center justify-center gap-1">
-                            <input type="radio" name="period" value="Tarde (13h - 18h)" class="text-brand-600">
+                        <label id="periodTardeLabel" class="border border-stone-200 rounded-xl p-2.5 text-center cursor-pointer hover:border-brand-500 flex items-center justify-center gap-1">
+                            <input type="radio" name="period" value="Tarde (13h - 18h)" id="periodTarde" class="text-brand-600">
                             <span class="text-xs text-stone-700">Tarde</span>
                         </label>
                         <label class="border border-stone-200 rounded-xl p-2.5 text-center cursor-pointer hover:border-brand-500 flex items-center justify-center gap-1">
-                            <input type="radio" name="period" value="Sábado" class="text-brand-600">
-                            <span class="text-xs text-stone-700">Sábado</span>
+                            <input type="radio" name="period" value="Qualquer horário" class="text-brand-600">
+                            <span class="text-xs text-stone-700">Qualquer</span>
                         </label>
                     </div>
                 </div>
@@ -1294,6 +1300,7 @@
         function openBookingModal(preselectedService = null) {
             const modal = document.getElementById('bookingModal');
             modal.classList.remove('hidden');
+            validateBookingDate();
             if (preselectedService) {
                 const select = document.getElementById('modalService');
                 for (let i = 0; i < select.options.length; i++) {
@@ -1309,16 +1316,63 @@
             document.getElementById('bookingModal').classList.add('hidden');
         }
 
+        // Booking date: no past days, no Sundays, Saturday morning only
+        function todayInBrasilia() {
+            return new Date().toLocaleDateString('en-CA', { timeZone: 'America/Sao_Paulo' }); // YYYY-MM-DD
+        }
+
+        function validateBookingDate() {
+            const input = document.getElementById('modalDate');
+            const hint = document.getElementById('modalDateHint');
+            const tarde = document.getElementById('periodTarde');
+            const tardeLabel = document.getElementById('periodTardeLabel');
+            const defaultHint = 'Segunda a sexta 09h–18h · Sábado 09h–13h · Domingo fechado';
+
+            input.min = todayInBrasilia();
+            input.setCustomValidity('');
+            hint.textContent = defaultHint;
+            hint.className = 'text-[11px] text-stone-500 mt-1';
+            tarde.disabled = false;
+            tardeLabel.classList.remove('opacity-40', 'cursor-not-allowed');
+
+            if (!input.value) return;
+            const day = new Date(input.value + 'T12:00:00').getDay();
+
+            if (input.value < input.min) {
+                input.setCustomValidity('Escolha uma data a partir de hoje.');
+            } else if (day === 0) {
+                input.setCustomValidity('Aos domingos a clínica está fechada. Escolha outro dia.');
+            } else if (day === 6) {
+                tarde.disabled = true;
+                tardeLabel.classList.add('opacity-40', 'cursor-not-allowed');
+                if (tarde.checked) document.querySelector('input[name="period"][value^="Manhã"]').checked = true;
+                hint.textContent = 'Aos sábados o atendimento é das 09h às 13h.';
+                hint.className = 'text-[11px] text-brand-700 font-medium mt-1';
+            }
+
+            if (input.validationMessage) {
+                hint.textContent = input.validationMessage;
+                hint.className = 'text-[11px] text-red-600 font-medium mt-1';
+            }
+        }
+
+        function formatBookingDate(value) {
+            const d = new Date(value + 'T12:00:00');
+            return d.toLocaleDateString('pt-BR', { weekday: 'long', day: '2-digit', month: '2-digit', year: 'numeric' });
+        }
+
         // WhatsApp Form Handler
         function handleBookingSubmit(e) {
             e.preventDefault();
             const name = document.getElementById('modalName').value.trim();
             const service = document.getElementById('modalService').value;
+            const date = document.getElementById('modalDate').value;
             const period = document.querySelector('input[name="period"]:checked').value;
             const notes = document.getElementById('modalNotes').value.trim();
 
             let message = `Olá! Meu nome é *${name}*.\n`;
             message += `Gostaria de agendar uma consulta para: *${service}*\n`;
+            message += `Data de preferência: *${formatBookingDate(date)}*\n`;
             message += `Preferência de horário: *${period}*\n`;
             if (notes) {
                 message += `Observações: ${notes}\n`;
