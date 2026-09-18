@@ -1357,7 +1357,8 @@
 
         // Check Open/Closed status dynamically based on time
         function updateOpenStatus() {
-            const now = new Date();
+            // Horário de Brasília, independente do fuso de quem visita
+            const now = new Date(new Date().toLocaleString('en-US', { timeZone: 'America/Sao_Paulo' }));
             const day = now.getDay(); // 0 = Sun, 6 = Sat
             const hour = now.getHours();
             const badge = document.getElementById('openStatusBadge');
