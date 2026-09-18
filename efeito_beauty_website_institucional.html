@@ -1,0 +1,1310 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Efeito Beauty | Clínica de Estética Avançada em Palhoça - SC</title>
+    <meta name="description" content="Clínica de Estética Avançada em Palhoça - SC. Especialista em Ultraformer, Laser Lavieen, Endolaser, Toxina Botulínica, Preenchimento e Harmonização. Nota 5.0 no Google.">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            50: '#FAF6F0',
+                            100: '#F4ECE1',
+                            200: '#E7D6C1',
+                            300: '#D7BC9C',
+                            400: '#C7A279',
+                            500: '#B88858',
+                            600: '#A17043',
+                            700: '#815632',
+                            800: '#644226',
+                            900: '#1C1917',
+                        },
+                        roseGold: '#D4A373',
+                        deepLuxury: '#111816',
+                        emeraldDark: '#1B2A26',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #FAF6F0;
+            color: #2C2A29;
+        }
+        .font-serif {
+            font-family: 'Playfair Display', Georgia, serif;
+        }
+        .bg-glass {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+        .bg-glass-dark {
+            background: rgba(17, 24, 22, 0.88);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+        .gold-gradient-text {
+            background: linear-gradient(135deg, #B88858 0%, #D4A373 50%, #815632 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .gold-bg-gradient {
+            background: linear-gradient(135deg, #C7A279 0%, #B88858 100%);
+        }
+        .gold-bg-gradient:hover {
+            background: linear-gradient(135deg, #B88858 0%, #A17043 100%);
+        }
+        .luxury-card {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .luxury-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 20px 30px -10px rgba(184, 136, 88, 0.15);
+        }
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #FAF6F0;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #D7BC9C;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #B88858;
+        }
+    </style>
+</head>
+<body class="antialiased selection:bg-brand-200 selection:text-brand-900 pb-20 md:pb-0">
+
+    <!-- Top Announcement Bar -->
+    <div class="bg-emeraldDark text-brand-100 text-xs sm:text-sm py-2 px-4 border-b border-brand-800/40">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2 text-center sm:text-left">
+            <div class="flex items-center gap-3">
+                <span class="inline-flex items-center gap-1 text-amber-300 font-semibold">
+                    <i class="fa-solid font-bold fa-star text-xs"></i> 5,0
+                </span>
+                <span class="text-brand-200/80">·</span>
+                <span>Clínica de Estética Avançada em Palhoça - SC</span>
+                <span class="hidden md:inline text-brand-200/80">·</span>
+                <span class="hidden md:inline text-emerald-400 text-xs font-medium bg-emerald-900/50 px-2 py-0.5 rounded-full border border-emerald-700/50">
+                    <i class="fa-solid fa-circle text-[8px] animate-pulse mr-1"></i> Atendimento Com Hora Marcada
+                </span>
+            </div>
+            <div class="flex items-center gap-4 text-xs">
+                <a href="tel:+5548991983830" class="hover:text-amber-300 transition-colors flex items-center gap-1.5">
+                    <i class="fa-solid fa-phone text-brand-400"></i> (48) 99198-3830
+                </a>
+                <a href="https://www.instagram.com/efeitobeautyy/" target="_blank" rel="noopener noreferrer" class="hover:text-amber-300 transition-colors flex items-center gap-1">
+                    <i class="fa-brands fa-instagram text-brand-400"></i> @efeitobeautyy
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header / Navigation -->
+    <header class="sticky top-0 z-40 bg-glass border-b border-brand-200/50 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            
+            <!-- Logo -->
+            <a href="#" class="group flex items-center gap-3">
+                <div class="w-10 h-10 rounded-full bg-brand-900 text-brand-200 flex items-center justify-center font-serif text-xl font-bold border border-brand-400 group-hover:scale-105 transition-transform">
+                    EB
+                </div>
+                <div>
+                    <span class="font-serif text-2xl font-bold text-brand-900 tracking-tight block leading-none">Efeito Beauty</span>
+                    <span class="text-[10px] uppercase tracking-widest text-brand-600 font-semibold block mt-1">Estética Avançada</span>
+                </div>
+            </a>
+
+            <!-- Desktop Nav Links -->
+            <nav class="hidden lg:flex items-center gap-8 text-sm font-medium text-stone-700">
+                <a href="#inicio" class="hover:text-brand-600 transition-colors">Início</a>
+                <a href="#sobre" class="hover:text-brand-600 transition-colors">A Clínica</a>
+                <a href="#servicos" class="hover:text-brand-600 transition-colors">Tratamentos</a>
+                <a href="#diferenciais" class="hover:text-brand-600 transition-colors">Diferenciais</a>
+                <a href="#depoimentos" class="hover:text-brand-600 transition-colors">Depoimentos</a>
+                <a href="#localizacao" class="hover:text-brand-600 transition-colors">Localização</a>
+            </nav>
+
+            <!-- CTA Header Button -->
+            <div class="hidden sm:flex items-center gap-3">
+                <button onclick="openBookingModal()" class="gold-bg-gradient text-white px-5 py-2.5 rounded-full font-medium text-sm shadow-md hover:shadow-lg transition-all duration-300 flex items-center gap-2">
+                    <i class="fa-brands fa-whatsapp text-lg"></i>
+                    <span>Agendar Avaliação</span>
+                </button>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button id="mobileMenuBtn" onclick="toggleMobileMenu()" class="lg:hidden p-2 rounded-lg text-stone-800 hover:bg-brand-100 focus:outline-none" aria-label="Abrir Menu">
+                <i class="fa-solid fa-bars text-xl" id="menuIcon"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Dropdown Menu -->
+        <div id="mobileMenu" class="hidden lg:hidden bg-white border-b border-brand-200 px-4 pt-2 pb-6 space-y-3 shadow-xl">
+            <a href="#inicio" onclick="toggleMobileMenu()" class="block py-2 text-stone-800 font-medium hover:text-brand-600 border-b border-stone-100">Início</a>
+            <a href="#sobre" onclick="toggleMobileMenu()" class="block py-2 text-stone-800 font-medium hover:text-brand-600 border-b border-stone-100">A Clínica</a>
+            <a href="#servicos" onclick="toggleMobileMenu()" class="block py-2 text-stone-800 font-medium hover:text-brand-600 border-b border-stone-100">Tratamentos</a>
+            <a href="#diferenciais" onclick="toggleMobileMenu()" class="block py-2 text-stone-800 font-medium hover:text-brand-600 border-b border-stone-100">Diferenciais</a>
+            <a href="#depoimentos" onclick="toggleMobileMenu()" class="block py-2 text-stone-800 font-medium hover:text-brand-600 border-b border-stone-100">Depoimentos</a>
+            <a href="#localizacao" onclick="toggleMobileMenu()" class="block py-2 text-stone-800 font-medium hover:text-brand-600">Localização</a>
+            
+            <div class="pt-2">
+                <button onclick="openBookingModal(); toggleMobileMenu();" class="w-full gold-bg-gradient text-white py-3 rounded-xl font-medium text-sm flex items-center justify-center gap-2 shadow">
+                    <i class="fa-brands fa-whatsapp text-lg"></i>
+                    <span>Agendar via WhatsApp</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="relative overflow-hidden py-16 md:py-24 bg-gradient-to-b from-brand-50 via-brand-100/50 to-brand-50">
+        <!-- Background decorative elements -->
+        <div class="absolute -top-24 -right-24 w-96 h-96 rounded-full bg-brand-200/40 blur-3xl pointer-events-none"></div>
+        <div class="absolute top-1/2 -left-24 w-80 h-80 rounded-full bg-amber-100/60 blur-3xl pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Left Text Column -->
+                <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                    
+                    <!-- Rating Badge -->
+                    <div class="inline-flex items-center gap-2 bg-white px-4 py-2 rounded-full border border-brand-200 shadow-sm text-xs sm:text-sm text-stone-800 font-medium">
+                        <div class="flex text-amber-400">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <span class="font-bold text-stone-900">5.0</span>
+                        <span class="text-stone-400">|</span>
+                        <span class="text-stone-600">54 Avaliações no Google</span>
+                        <i class="fa-brands fa-google text-blue-500 ml-1"></i>
+                    </div>
+
+                    <!-- Main Headline -->
+                    <h1 class="font-serif text-3xl sm:text-5xl lg:text-6xl font-bold text-stone-900 leading-tight">
+                        Sua melhor versão com <span class="gold-gradient-text">tecnologia estética avançada</span> em Palhoça
+                    </h1>
+
+                    <!-- Paragraph Description -->
+                    <p class="text-stone-600 text-base sm:text-lg max-w-2xl mx-auto lg:mx-0 leading-relaxed">
+                        Tratamentos faciais e corporais de alta performance, focados em rejuvenescimento natural, harmonização e resultados comprovados com total segurança e exclusividade.
+                    </p>
+
+                    <!-- Feature Tags -->
+                    <div class="flex flex-wrap justify-center lg:justify-start gap-2 pt-2">
+                        <span class="bg-white/80 border border-brand-200 text-brand-800 text-xs px-3 py-1.5 rounded-lg font-medium">✨ Ultraformer III</span>
+                        <span class="bg-white/80 border border-brand-200 text-brand-800 text-xs px-3 py-1.5 rounded-lg font-medium">✨ Laser Lavieen</span>
+                        <span class="bg-white/80 border border-brand-200 text-brand-800 text-xs px-3 py-1.5 rounded-lg font-medium">✨ Endolaser</span>
+                        <span class="bg-white/80 border border-brand-200 text-brand-800 text-xs px-3 py-1.5 rounded-lg font-medium">✨ Harmonização</span>
+                    </div>
+
+                    <!-- CTA Buttons -->
+                    <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-4">
+                        <button onclick="openBookingModal()" class="w-full sm:w-auto gold-bg-gradient text-white px-8 py-4 rounded-xl font-semibold shadow-lg hover:shadow-xl transition-all duration-300 flex items-center justify-center gap-3 text-base">
+                            <i class="fa-brands fa-whatsapp text-xl"></i>
+                            <span>Agendar Consulta Personalizada</span>
+                        </button>
+                        
+                        <a href="#servicos" class="w-full sm:w-auto bg-white border border-brand-300 hover:border-brand-500 text-stone-800 px-6 py-4 rounded-xl font-medium transition-colors flex items-center justify-center gap-2 text-base shadow-sm">
+                            <span>Ver Todos Tratamentos</span>
+                            <i class="fa-solid fa-arrow-down text-xs text-brand-600"></i>
+                        </a>
+                    </div>
+
+                    <!-- Trust Footer Bar -->
+                    <div class="pt-6 border-t border-brand-200/60 grid grid-cols-3 gap-4 text-center lg:text-left">
+                        <div>
+                            <p class="text-xl sm:text-2xl font-serif font-bold text-brand-800">100%</p>
+                            <p class="text-xs text-stone-500">Satisfação Garantida</p>
+                        </div>
+                        <div>
+                            <p class="text-xl sm:text-2xl font-serif font-bold text-brand-800">+20</p>
+                            <p class="text-xs text-stone-500">Procedimentos Avançados</p>
+                        </div>
+                        <div>
+                            <p class="text-xl sm:text-2xl font-serif font-bold text-brand-800">Pagani</p>
+                            <p class="text-xs text-stone-500">Localização Privilegiada</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Right Visual Showcase Image / Card -->
+                <div class="lg:col-span-5 relative">
+                    <div class="relative mx-auto max-w-md lg:max-w-none">
+                        
+                        <!-- Main Card Wrap -->
+                        <div class="bg-white rounded-3xl p-3 shadow-2xl border border-brand-200/80 relative z-10 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=800&q=80" 
+                                 onerror="this.src='https://placehold.co/600x700/FAF6F0/815632?text=Efeito+Beauty+Clinica'" 
+                                 alt="Efeito Beauty Clínica de Estética Avançada Palhoça" 
+                                 class="rounded-2xl w-full h-[420px] object-cover">
+
+                            <!-- Floating Overlay Tag -->
+                            <div class="absolute bottom-6 left-6 right-6 bg-glass-dark text-white p-4 rounded-2xl border border-white/20 shadow-xl">
+                                <div class="flex items-center gap-3">
+                                    <div class="w-10 h-10 rounded-full bg-brand-500 flex items-center justify-center text-white font-bold">
+                                        <i class="fa-solid fa-gem"></i>
+                                    </div>
+                                    <div>
+                                        <p class="font-serif text-sm font-semibold">Atendimento Exclusivo & Personalizado</p>
+                                        <p class="text-xs text-stone-300">Débora & Equipe Especializada em Palhoça</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Secondary floating highlight element -->
+                        <div class="hidden sm:flex absolute -top-6 -left-6 bg-white p-4 rounded-2xl shadow-xl border border-brand-200 z-20 items-center gap-3">
+                            <div class="w-10 h-10 rounded-full bg-amber-100 flex items-center justify-center text-amber-600 font-bold">
+                                <i class="fa-solid fa-award"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-stone-500">Classificação Google</p>
+                                <p class="text-sm font-bold text-stone-900">5.0 Estrelas Impecável</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Sobre A Clínica (About) Section -->
+    <section id="sobre" class="py-20 bg-white relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Left Column Visual -->
+                <div class="lg:col-span-5 order-2 lg:order-1">
+                    <div class="grid grid-cols-2 gap-4">
+                        <img src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=600&q=80" 
+                             onerror="this.src='https://placehold.co/400x500/FAF6F0/815632?text=Clinica+Palhoca'" 
+                             alt="Ambiente Efeito Beauty" 
+                             class="rounded-2xl shadow-md h-64 sm:h-80 w-full object-cover">
+                        <img src="https://images.unsplash.com/photo-1512290900676-26c2a0d0e54b?auto=format&fit=crop&w=600&q=80" 
+                             onerror="this.src='https://placehold.co/400x500/FAF6F0/815632?text=Tratamento+Estetico'" 
+                             alt="Atendimento Estético" 
+                             class="rounded-2xl shadow-md h-64 sm:h-80 w-full object-cover mt-8">
+                    </div>
+                </div>
+
+                <!-- Right Column Content -->
+                <div class="lg:col-span-7 order-1 lg:order-2 space-y-6">
+                    <div>
+                        <span class="text-brand-600 font-semibold text-xs tracking-widest uppercase block mb-1">Bem-vinda à Efeito Beauty</span>
+                        <h2 class="font-serif text-3xl sm:text-4xl font-bold text-stone-900">
+                            Cuidado minucioso, ética e tecnologias de referência global
+                        </h2>
+                    </div>
+
+                    <p class="text-stone-600 leading-relaxed">
+                        Localizada no nobre bairro Pagani em Palhoça - SC, a <strong>Efeito Beauty</strong> nasceu com a missão de oferecer uma experiência completa em estética avançada. Sob o comando da profissional <strong>Débora</strong>, nossa clínica combina tecnologia médica estética de ponta com um atendimento caloroso, humanizado e focado na sua autoestima.
+                    </p>
+
+                    <p class="text-stone-600 leading-relaxed">
+                        Acreditamos que a verdadeira beleza se revela nos detalhes e no respeito à anatomia única de cada paciente. Por isso, não trabalhamos com fórmulas prontas: cada tratamento é desenhado sob medida após uma rigorosa avaliação inicial.
+                    </p>
+
+                    <!-- Features Grid -->
+                    <div class="grid sm:grid-cols-2 gap-4 pt-2">
+                        <div class="p-4 rounded-xl bg-brand-50 border border-brand-200/70 flex gap-3">
+                            <div class="text-brand-600 text-xl font-bold mt-0.5">
+                                <i class="fa-solid fa-microscope"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-semibold text-stone-900 text-sm">Tecnologia Avançada</h3>
+                                <p class="text-xs text-stone-500 mt-0.5">Ultraformer, Laser Lavieen, Endolaser e equipamentos certificados.</p>
+                            </div>
+                        </div>
+
+                        <div class="p-4 rounded-xl bg-brand-50 border border-brand-200/70 flex gap-3">
+                            <div class="text-brand-600 text-xl font-bold mt-0.5">
+                                <i class="fa-solid fa-user-shield"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-semibold text-stone-900 text-sm">Segurança & Ética</h3>
+                                <p class="text-xs text-stone-500 mt-0.5">Protocolos rigorosos de higiene e produtos de altíssima qualidade.</p>
+                            </div>
+                        </div>
+
+                        <div class="p-4 rounded-xl bg-brand-50 border border-brand-200/70 flex gap-3">
+                            <div class="text-brand-600 text-xl font-bold mt-0.5">
+                                <i class="fa-solid fa-sparkles"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-semibold text-stone-900 text-sm">Resultados Naturais</h3>
+                                <p class="text-xs text-stone-500 mt-0.5">Realce sem exageros, preservando a harmonia das suas feições.</p>
+                            </div>
+                        </div>
+
+                        <div class="p-4 rounded-xl bg-brand-50 border border-brand-200/70 flex gap-3">
+                            <div class="text-brand-600 text-xl font-bold mt-0.5">
+                                <i class="fa-solid fa-heart flex-shrink-0"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-semibold text-stone-900 text-sm">Acolhimento 5 Estrelas</h3>
+                                <p class="text-xs text-stone-500 mt-0.5">Reconhecida com nota 5.0 por dezenas de pacientes satisfeitas.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pt-2">
+                        <button onclick="openBookingModal()" class="inline-flex items-center gap-2 text-brand-700 font-semibold hover:text-brand-900 transition-colors underline underline-offset-4">
+                            <span>Conhecer nossos protocolos exclusivos</span>
+                            <i class="fa-solid fa-chevron-right text-xs"></i>
+                        </button>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Serviços (Services) Section -->
+    <section id="servicos" class="py-20 bg-brand-50 border-t border-brand-200/60">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center max-w-3xl mx-auto space-y-3 mb-12">
+                <span class="text-brand-600 font-semibold text-xs tracking-widest uppercase">Procedimentos Exclusivos</span>
+                <h2 class="font-serif text-3xl sm:text-4xl font-bold text-stone-900">Menu Completo de Estética Avançada</h2>
+                <p class="text-stone-600 text-sm sm:text-base">
+                    Explore os tratamentos disponíveis na Efeito Beauty. Clique no serviço de sua preferência para agendar ou tirar dúvidas diretamente no WhatsApp.
+                </p>
+            </div>
+
+            <!-- Search and Filter Controls -->
+            <div class="space-y-6 mb-10">
+                
+                <!-- Search input -->
+                <div class="max-w-md mx-auto relative">
+                    <i class="fa-solid fa-magnifying-glass absolute left-4 top-1/2 -translate-y-1/2 text-stone-400"></i>
+                    <input type="text" id="serviceSearch" oninput="filterServices()" placeholder="Buscar tratamento (ex: Botox, Ultraformer, Bronze)..." 
+                           class="w-full pl-11 pr-4 py-3 rounded-full bg-white border border-brand-200 text-sm focus:outline-none focus:ring-2 focus:ring-brand-500 shadow-sm">
+                </div>
+
+                <!-- Category Filter Tabs -->
+                <div class="flex flex-wrap items-center justify-center gap-2" id="filterTabs">
+                    <button onclick="setCategory('todos')" class="category-tab active px-5 py-2 rounded-full text-xs font-semibold bg-brand-900 text-white shadow-sm transition-all">
+                        Todos (20)
+                    </button>
+                    <button onclick="setCategory('facial')" class="category-tab px-5 py-2 rounded-full text-xs font-semibold bg-white text-stone-700 border border-brand-200 hover:border-brand-400 transition-all">
+                        Facial & Rejuvenescimento
+                    </button>
+                    <button onclick="setCategory('tecnologia')" class="category-tab px-5 py-2 rounded-full text-xs font-semibold bg-white text-stone-700 border border-brand-200 hover:border-brand-400 transition-all">
+                        Alta Tecnologia & Lasers
+                    </button>
+                    <button onclick="setCategory('corporal')" class="category-tab px-5 py-2 rounded-full text-xs font-semibold bg-white text-stone-700 border border-brand-200 hover:border-brand-400 transition-all">
+                        Corporal & Contorno
+                    </button>
+                    <button onclick="setCategory('intima')" class="category-tab px-5 py-2 rounded-full text-xs font-semibold bg-white text-stone-700 border border-brand-200 hover:border-brand-400 transition-all">
+                        Harmonização Íntima
+                    </button>
+                </div>
+            </div>
+
+            <!-- Services Grid -->
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6" id="servicesGrid">
+                
+                <!-- Service Items will be dynamically rendered / managed via JS -->
+                <!-- JS populates these cards automatically based on our detailed list -->
+
+            </div>
+
+            <!-- Empty Search State -->
+            <div id="emptyServices" class="hidden text-center py-12">
+                <i class="fa-solid fa-sparkles text-4xl text-brand-300 mb-3"></i>
+                <p class="text-stone-700 font-medium">Nenhum tratamento encontrado para essa busca.</p>
+                <p class="text-xs text-stone-500 mt-1">Tente pesquisar com outro termo ou fale conosco no WhatsApp.</p>
+                <button onclick="resetFilters()" class="mt-4 px-4 py-2 bg-brand-900 text-white rounded-lg text-xs font-medium">Limpar Filtros</button>
+            </div>
+
+            <!-- Bottom Note -->
+            <div class="mt-12 text-center bg-white p-6 rounded-2xl border border-brand-200 max-w-2xl mx-auto shadow-sm">
+                <p class="text-xs sm:text-sm text-stone-700 font-medium">
+                    ✨ Dúvidas sobre qual o melhor procedimento para sua pele?
+                </p>
+                <p class="text-xs text-stone-500 mt-1">
+                    Realizamos uma avaliação presencial minuciosa em Palhoça para definir o protocolo ideal para seus objetivos.
+                </p>
+                <button onclick="openBookingModal('Avaliação Geral Personalizada')" class="mt-3 inline-flex items-center gap-2 text-xs font-bold text-brand-800 hover:text-brand-600 transition-colors">
+                    <i class="fa-brands fa-whatsapp text-sm"></i>
+                    <span>Solicitar Avaliação Personalizada</span>
+                </button>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Diferenciais (Why Choose Us) Section -->
+    <section id="diferenciais" class="py-20 bg-emeraldDark text-stone-100 relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            
+            <div class="text-center max-w-3xl mx-auto space-y-3 mb-16">
+                <span class="text-brand-300 font-semibold text-xs tracking-widest uppercase">Por que escolher a Efeito Beauty?</span>
+                <h2 class="font-serif text-3xl sm:text-4xl font-bold text-white">Excelência em cada etapa do seu tratamento</h2>
+                <p class="text-stone-300 text-sm sm:text-base">
+                    Combinamos ambiente aconchegante, segurança clínica e os aparelhos mais desejados da estética moderna.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                
+                <div class="bg-stone-900/80 p-6 rounded-2xl border border-stone-800 hover:border-brand-500 transition-all duration-300">
+                    <div class="w-12 h-12 rounded-xl bg-brand-900/80 text-brand-300 flex items-center justify-center text-xl mb-4 border border-brand-700/50">
+                        <i class="fa-solid fa-wand-magic-sparkles"></i>
+                    </div>
+                    <h3 class="font-serif text-lg font-semibold text-white mb-2">Tecnologia de Ponta</h3>
+                    <p class="text-xs text-stone-400 leading-relaxed">
+                        Equipamentos renomados como Ultraformer III e Laser Lavieen para resultados expressivos sem cirurgia.
+                    </p>
+                </div>
+
+                <div class="bg-stone-900/80 p-6 rounded-2xl border border-stone-800 hover:border-brand-500 transition-all duration-300">
+                    <div class="w-12 h-12 rounded-xl bg-brand-900/80 text-brand-300 flex items-center justify-center text-xl mb-4 border border-brand-700/50">
+                        <i class="fa-solid fa-user-nurse"></i>
+                    </div>
+                    <h3 class="font-serif text-lg font-semibold text-white mb-2">Atendimento Débora</h3>
+                    <p class="text-xs text-stone-400 leading-relaxed">
+                        Reconhecido pelos pacientes por sua gentileza, atenção aos mínimos detalhes, simpátia e altíssimo profissionalismo.
+                    </p>
+                </div>
+
+                <div class="bg-stone-900/80 p-6 rounded-2xl border border-stone-800 hover:border-brand-500 transition-all duration-300">
+                    <div class="w-12 h-12 rounded-xl bg-brand-900/80 text-brand-300 flex items-center justify-center text-xl mb-4 border border-brand-700/50">
+                        <i class="fa-solid fa-shield-heart"></i>
+                    </div>
+                    <h3 class="font-serif text-lg font-semibold text-white mb-2">Privacidade Total</h3>
+                    <p class="text-xs text-stone-400 leading-relaxed">
+                        Ambiente calmo no Pagani, com salas individuais e atendimento com horário reservado só para você.
+                    </p>
+                </div>
+
+                <div class="bg-stone-900/80 p-6 rounded-2xl border border-stone-800 hover:border-brand-500 transition-all duration-300">
+                    <div class="w-12 h-12 rounded-xl bg-brand-900/80 text-brand-300 flex items-center justify-center text-xl mb-4 border border-brand-700/50">
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h3 class="font-serif text-lg font-semibold text-white mb-2">Nota Máxima no Google</h3>
+                    <p class="text-xs text-stone-400 leading-relaxed">
+                        Classificação 5,0 estrelas baseada em 54 avaliações reais de clientes encantados com seus resultados.
+                    </p>
+                </div>
+
+            </div>
+
+            <!-- Banner Callout Inside Differentials -->
+            <div class="mt-12 bg-gradient-to-r from-brand-900 to-emerald-950 p-8 rounded-3xl border border-brand-700/40 text-center md:text-left flex flex-col md:flex-row items-center justify-between gap-6">
+                <div>
+                    <h3 class="font-serif text-2xl font-bold text-white mb-1">Pronta para viver essa experiência?</h3>
+                    <p class="text-xs sm:text-sm text-stone-300">Agende seu horário com a Débora e transforme o cuidado com a sua pele em Palhoça.</p>
+                </div>
+                <button onclick="openBookingModal()" class="gold-bg-gradient text-white px-6 py-3 rounded-xl font-medium text-sm flex items-center gap-2 whitespace-nowrap shadow-lg">
+                    <i class="fa-brands fa-whatsapp text-lg"></i>
+                    <span>Falar no WhatsApp Agora</span>
+                </button>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Depoimentos (Google Reviews) Section -->
+    <section id="depoimentos" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center max-w-3xl mx-auto space-y-3 mb-16">
+                <span class="text-brand-600 font-semibold text-xs tracking-widest uppercase">Opinião de Quem Ama Nosso Trabalho</span>
+                <h2 class="font-serif text-3xl sm:text-4xl font-bold text-stone-900">Depoimentos Reais no Google</h2>
+                
+                <!-- Google Rating Badge Summary -->
+                <div class="inline-flex items-center gap-3 bg-brand-50 px-6 py-3 rounded-2xl border border-brand-200 mt-2">
+                    <div class="text-amber-500 flex text-lg">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <div class="text-left">
+                        <p class="text-sm font-bold text-stone-900 leading-none">5,0 de 5,0 estrelas</p>
+                        <p class="text-xs text-stone-500 mt-0.5">Com base em 54 avaliações verificadas</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Testimonials Grid -->
+            <div class="grid md:grid-cols-3 gap-6">
+                
+                <!-- Review Card 1 -->
+                <div class="bg-brand-50/60 p-6 rounded-2xl border border-brand-200/80 flex flex-col justify-between luxury-card">
+                    <div class="space-y-4">
+                        <div class="flex items-center justify-between">
+                            <div class="flex text-amber-400 text-sm">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <i class="fa-brands fa-google text-stone-400 text-sm"></i>
+                        </div>
+                        <p class="text-stone-700 text-sm italic leading-relaxed">
+                            "Amei meu bronzeamento, Débora muito gentil, cuidado e simpática."
+                        </p>
+                    </div>
+                    <div class="pt-6 border-t border-brand-200/50 flex items-center gap-3 mt-4">
+                        <div class="w-9 h-9 rounded-full bg-brand-300 text-brand-900 font-bold text-xs flex items-center justify-center">
+                            A
+                        </div>
+                        <div>
+                            <p class="text-xs font-bold text-stone-900">Cliente Verificada</p>
+                            <p class="text-[10px] text-stone-500">Avaliação no Google Maps</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Review Card 2 -->
+                <div class="bg-brand-50/60 p-6 rounded-2xl border border-brand-200/80 flex flex-col justify-between luxury-card">
+                    <div class="space-y-4">
+                        <div class="flex items-center justify-between">
+                            <div class="flex text-amber-400 text-sm">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <i class="fa-brands fa-google text-stone-400 text-sm"></i>
+                        </div>
+                        <p class="text-stone-700 text-sm italic leading-relaxed">
+                            "… impecável e resultado incrível! Recomendo de olhos fechados… ooo bronze perfeito. Experiência maravilhosa!"
+                        </p>
+                    </div>
+                    <div class="pt-6 border-t border-brand-200/50 flex items-center gap-3 mt-4">
+                        <div class="w-9 h-9 rounded-full bg-brand-400 text-white font-bold text-xs flex items-center justify-center">
+                            M
+                        </div>
+                        <div>
+                            <p class="text-xs font-bold text-stone-900">Mariana S.</p>
+                            <p class="text-[10px] text-stone-500">Avaliação no Google Maps</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Review Card 3 -->
+                <div class="bg-brand-50/60 p-6 rounded-2xl border border-brand-200/80 flex flex-col justify-between luxury-card">
+                    <div class="space-y-4">
+                        <div class="flex items-center justify-between">
+                            <div class="flex text-amber-400 text-sm">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <i class="fa-brands fa-google text-stone-400 text-sm"></i>
+                        </div>
+                        <p class="text-stone-700 text-sm italic leading-relaxed">
+                            "Atendimento impecável e personalizado, recepção e resultados incríveis! Débora é extremamente atenciosa."
+                        </p>
+                    </div>
+                    <div class="pt-6 border-t border-brand-200/50 flex items-center gap-3 mt-4">
+                        <div class="w-9 h-9 rounded-full bg-brand-800 text-white font-bold text-xs flex items-center justify-center">
+                            C
+                        </div>
+                        <div>
+                            <p class="text-xs font-bold text-stone-900">Camila R.</p>
+                            <p class="text-[10px] text-stone-500">Avaliação no Google Maps</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- External Google Review Link -->
+            <div class="text-center mt-10">
+                <a href="https://maps.google.com/?cid=11784930426061352177" target="_blank" rel="noopener noreferrer" 
+                   class="inline-flex items-center gap-2 text-xs font-bold text-stone-700 hover:text-brand-700 transition-colors bg-stone-100 hover:bg-brand-100 px-5 py-2.5 rounded-full border border-stone-200">
+                    <i class="fa-brands fa-google text-blue-500"></i>
+                    <span>Ver todas as 54 avaliações no Google</span>
+                    <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Localização e Contato Section -->
+    <section id="localizacao" class="py-20 bg-brand-50 border-t border-brand-200/60">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center max-w-3xl mx-auto space-y-3 mb-16">
+                <span class="text-brand-600 font-semibold text-xs tracking-widest uppercase">Venha Nos Visitar</span>
+                <h2 class="font-serif text-3xl sm:text-4xl font-bold text-stone-900">Localização Privilegiada em Palhoça</h2>
+                <p class="text-stone-600 text-sm sm:text-base">
+                    Estamos localizados no coração do bairro Pagani, com fácil acesso e estacionamento.
+                </p>
+            </div>
+
+            <div class="grid lg:grid-cols-12 gap-8 items-start">
+                
+                <!-- Left Details Card -->
+                <div class="lg:col-span-5 space-y-6">
+                    
+                    <div class="bg-white p-6 sm:p-8 rounded-3xl border border-brand-200 shadow-md space-y-6">
+                        
+                        <!-- Open Status Indicator -->
+                        <div class="flex items-center justify-between pb-4 border-b border-stone-100">
+                            <div>
+                                <h3 class="font-serif font-bold text-stone-900 text-lg">Efeito Beauty</h3>
+                                <p class="text-xs text-stone-500">Clínica de Estética Avançada</p>
+                            </div>
+                            <span id="openStatusBadge" class="px-3 py-1 rounded-full text-xs font-medium">
+                                <!-- Populated dynamically by JavaScript -->
+                            </span>
+                        </div>
+
+                        <!-- Address -->
+                        <div class="flex items-start gap-4">
+                            <div class="w-10 h-10 rounded-xl bg-brand-100 text-brand-800 flex items-center justify-center flex-shrink-0 text-lg">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-stone-900 text-sm">Endereço</h4>
+                                <p class="text-xs text-stone-600 mt-1 leading-relaxed">
+                                    R. Joci José Martins, 247 - Pagani<br>
+                                    Palhoça - SC, 88132-148
+                                </p>
+                                <button onclick="copyAddress()" class="text-brand-700 hover:text-brand-900 text-[11px] font-bold mt-1.5 flex items-center gap-1">
+                                    <i class="fa-solid fa-copy"></i>
+                                    <span id="copyBtnText">Copiar Endereço</span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Phone / Whatsapp -->
+                        <div class="flex items-start gap-4">
+                            <div class="w-10 h-10 rounded-xl bg-brand-100 text-brand-800 flex items-center justify-center flex-shrink-0 text-lg">
+                                <i class="fa-brands fa-whatsapp"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-stone-900 text-sm">Telefone / WhatsApp</h4>
+                                <p class="text-xs text-stone-600 mt-1">
+                                    (48) 99198-3830
+                                </p>
+                                <a href="https://wa.me/5548991983830" target="_blank" class="text-brand-700 hover:text-brand-900 text-[11px] font-bold mt-1 inline-block">
+                                    Iniciar conversa direta →
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Hours -->
+                        <div class="flex items-start gap-4">
+                            <div class="w-10 h-10 rounded-xl bg-brand-100 text-brand-800 flex items-center justify-center flex-shrink-0 text-lg">
+                                <i class="fa-regular fa-clock"></i>
+                            </div>
+                            <div class="w-full">
+                                <h4 class="font-semibold text-stone-900 text-sm mb-1">Horário de Funcionamento</h4>
+                                <div class="text-xs text-stone-600 space-y-1">
+                                    <div class="flex justify-between">
+                                        <span>Segunda a Sexta:</span>
+                                        <span class="font-medium text-stone-800">09:00 às 18:00</span>
+                                    </div>
+                                    <div class="flex justify-between">
+                                        <span>Sábado:</span>
+                                        <span class="font-medium text-stone-800">09:00 às 13:00</span>
+                                    </div>
+                                    <div class="flex justify-between text-stone-400">
+                                        <span>Domingo:</span>
+                                        <span>Fechado</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Action buttons -->
+                        <div class="pt-2 grid grid-cols-2 gap-3">
+                            <a href="https://maps.google.com/?cid=11784930426061352177" target="_blank" rel="noopener noreferrer" 
+                               class="w-full py-2.5 px-3 bg-stone-900 text-white rounded-xl text-xs font-semibold text-center hover:bg-stone-800 transition-colors flex items-center justify-center gap-1.5">
+                                <i class="fa-solid fa-diamond-turn-right"></i>
+                                <span>Abrir no Maps</span>
+                            </a>
+                            <button onclick="openBookingModal()" 
+                                    class="w-full py-2.5 px-3 gold-bg-gradient text-white rounded-xl text-xs font-semibold text-center shadow-sm hover:shadow transition-all flex items-center justify-center gap-1.5">
+                                <i class="fa-brands fa-whatsapp"></i>
+                                <span>Agendar Visita</span>
+                            </button>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- Right Interactive Map Frame -->
+                <div class="lg:col-span-7">
+                    <div class="bg-white p-3 rounded-3xl border border-brand-200 shadow-md h-full min-h-[400px] flex flex-col">
+                        <iframe 
+                            title="Mapa de Localização Efeito Beauty"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3534.823612842189!2d-48.6738914!3d-27.6322312!2m3!100!0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x952735c0c148c719%3A0xa38c7bc884146cf1!2sR.%20Joci%20Jos%C3%A9%20Martins%2C%20247%20-%20Pagani%2C%20Palho%C3%A7a%20-%20SC%2C%2088132-148!5e0!3m2!1spt-BR!2sbr!4v1700000000000!5m2!1spt-BR!2sbr" 
+                            width="100%" 
+                            height="100%" 
+                            style="border:0; min-height: 420px; border-radius: 1.25rem;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-emeraldDark text-stone-300 py-12 border-t border-stone-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8 pb-10 border-b border-stone-800/80">
+                
+                <!-- Col 1: About Brand -->
+                <div class="space-y-4 md:col-span-1">
+                    <div class="flex items-center gap-3">
+                        <div class="w-9 h-9 rounded-full bg-brand-500 text-white flex items-center justify-center font-serif font-bold text-lg">
+                            EB
+                        </div>
+                        <span class="font-serif text-xl font-bold text-white">Efeito Beauty</span>
+                    </div>
+                    <p class="text-xs text-stone-400 leading-relaxed">
+                        Clínica de Estética Avançada especialista em tratamentos faciais e corporais de alta performance em Palhoça - SC.
+                    </p>
+                    <div class="flex gap-3 text-brand-300">
+                        <a href="https://www.instagram.com/efeitobeautyy/" target="_blank" rel="noopener noreferrer" class="w-8 h-8 rounded-full bg-stone-800 hover:bg-brand-600 hover:text-white flex items-center justify-center text-sm transition-colors" aria-label="Instagram">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="https://wa.me/5548991983830" target="_blank" class="w-8 h-8 rounded-full bg-stone-800 hover:bg-emerald-600 hover:text-white flex items-center justify-center text-sm transition-colors" aria-label="WhatsApp">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </a>
+                        <a href="https://maps.google.com/?cid=11784930426061352177" target="_blank" class="w-8 h-8 rounded-full bg-stone-800 hover:bg-blue-600 hover:text-white flex items-center justify-center text-sm transition-colors" aria-label="Google Maps">
+                            <i class="fa-brands fa-google"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Col 2: Fast Navigation -->
+                <div>
+                    <h4 class="font-serif text-white font-semibold text-sm mb-3">Navegação</h4>
+                    <ul class="space-y-2 text-xs">
+                        <li><a href="#inicio" class="hover:text-brand-300 transition-colors">Início</a></li>
+                        <li><a href="#sobre" class="hover:text-brand-300 transition-colors">A Clínica</a></li>
+                        <li><a href="#servicos" class="hover:text-brand-300 transition-colors">Tratamentos</a></li>
+                        <li><a href="#diferenciais" class="hover:text-brand-300 transition-colors">Diferenciais</a></li>
+                        <li><a href="#depoimentos" class="hover:text-brand-300 transition-colors">Depoimentos</a></li>
+                        <li><a href="#localizacao" class="hover:text-brand-300 transition-colors">Localização</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 3: Key Treatments -->
+                <div>
+                    <h4 class="font-serif text-white font-semibold text-sm mb-3">Destaques</h4>
+                    <ul class="space-y-2 text-xs text-stone-400">
+                        <li>Ultraformer III</li>
+                        <li>Laser Lavieen</li>
+                        <li>Endolaser & Bronzeamento</li>
+                        <li>Toxina Botulínica & Preenchimento</li>
+                        <li>Bioestimulador de Colágeno</li>
+                        <li>Harmonização de Glúteos</li>
+                    </ul>
+                </div>
+
+                <!-- Col 4: Contact Info -->
+                <div>
+                    <h4 class="font-serif text-white font-semibold text-sm mb-3">Endereço & Contato</h4>
+                    <address class="not-italic text-xs text-stone-400 space-y-2">
+                        <p><i class="fa-solid fa-location-dot text-brand-400 mr-1.5"></i> R. Joci José Martins, 247 - Pagani, Palhoça - SC</p>
+                        <p><i class="fa-solid fa-phone text-brand-400 mr-1.5"></i> (48) 99198-3830</p>
+                        <p><i class="fa-brands fa-instagram text-brand-400 mr-1.5"></i> @efeitobeautyy</p>
+                    </address>
+                </div>
+
+            </div>
+
+            <div class="pt-6 flex flex-col sm:flex-row justify-between items-center text-[11px] text-stone-500 gap-2">
+                <p>© <span id="currentYear"></span> Efeito Beauty - Todos os direitos reservados. CNPJ & Estética Avançada em Palhoça.</p>
+                <p>Desenvolvido para oferecer transparência e excelência em atendimento.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/5548991983830?text=Ol%C3%A1%21+Gostaria+de+saber+mais+informa%C3%A7%C3%B5es+sobre+os+tratamentos+da+Efeito+Beauty." 
+       target="_blank" 
+       rel="noopener noreferrer"
+       class="fixed bottom-6 right-6 z-50 bg-emerald-500 hover:bg-emerald-600 text-white p-4 rounded-full shadow-2xl transition-all duration-300 hover:scale-110 flex items-center justify-center group"
+       aria-label="Atendimento via WhatsApp">
+        <span class="absolute right-16 bg-stone-900 text-white text-xs font-semibold px-3 py-1.5 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap shadow-lg pointer-events-none">
+            Fale conosco no WhatsApp! 💬
+        </span>
+        <i class="fa-brands fa-whatsapp text-3xl"></i>
+        <span class="absolute -top-1 -right-1 w-3.5 h-3.5 bg-amber-400 rounded-full border-2 border-white animate-ping"></span>
+    </a>
+
+    <!-- Mobile Sticky CTA Bottom Bar -->
+    <div class="fixed bottom-0 left-0 right-0 z-40 bg-white border-t border-brand-200 p-2.5 sm:hidden shadow-lg flex items-center gap-2">
+        <a href="tel:+5548991983830" class="flex-1 py-2.5 bg-stone-100 text-stone-800 rounded-xl text-xs font-bold flex items-center justify-center gap-1.5 border border-stone-200">
+            <i class="fa-solid fa-phone text-brand-600"></i>
+            <span>Ligar</span>
+        </a>
+        <button onclick="openBookingModal()" class="flex-[2] py-2.5 gold-bg-gradient text-white rounded-xl text-xs font-bold flex items-center justify-center gap-2 shadow">
+            <i class="fa-brands fa-whatsapp text-base"></i>
+            <span>Agendar pelo WhatsApp</span>
+        </button>
+    </div>
+
+    <!-- Booking Modal (Interactive Appointment Builder) -->
+    <div id="bookingModal" class="fixed inset-0 z-50 bg-stone-900/70 backdrop-blur-sm hidden flex items-center justify-center p-4 transition-opacity">
+        <div class="bg-white rounded-3xl max-w-lg w-full p-6 sm:p-8 relative shadow-2xl border border-brand-200 max-h-[90vh] overflow-y-auto">
+            
+            <button onclick="closeBookingModal()" class="absolute top-5 right-5 text-stone-400 hover:text-stone-800 text-xl w-8 h-8 rounded-full bg-stone-100 flex items-center justify-center">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+
+            <div class="text-center space-y-2 mb-6">
+                <div class="w-12 h-12 rounded-full bg-brand-100 text-brand-800 mx-auto flex items-center justify-center text-xl font-bold">
+                    <i class="fa-regular fa-calendar-check"></i>
+                </div>
+                <h3 class="font-serif text-2xl font-bold text-stone-900">Agendar Atendimento</h3>
+                <p class="text-xs text-stone-500">
+                    Selecione o procedimento de seu interesse para gerar uma mensagem direta para a clínica no WhatsApp.
+                </p>
+            </div>
+
+            <form id="bookingForm" onsubmit="handleBookingSubmit(event)" class="space-y-4">
+                
+                <div>
+                    <label class="block text-xs font-semibold text-stone-700 mb-1">Seu Nome Completo</label>
+                    <input type="text" id="modalName" required placeholder="Ex: Maria Silva" class="w-full px-4 py-2.5 rounded-xl border border-stone-200 text-sm focus:ring-2 focus:ring-brand-500 focus:outline-none">
+                </div>
+
+                <div>
+                    <label class="block text-xs font-semibold text-stone-700 mb-1">Tratamento Desejado</label>
+                    <select id="modalService" class="w-full px-4 py-2.5 rounded-xl border border-stone-200 text-sm focus:ring-2 focus:ring-brand-500 focus:outline-none bg-white">
+                        <option value="Avaliação Estética Geral">Avaliação Estética Geral</option>
+                        <option value="Ultraformer III">Ultraformer III</option>
+                        <option value="Laser Lavieen">Laser Lavieen</option>
+                        <option value="Endolaser">Endolaser</option>
+                        <option value="Toxina Botulínica (Botox)">Toxina Botulínica (Botox)</option>
+                        <option value="Preenchimento Labial">Preenchimento Labial</option>
+                        <option value="Bioestimulador de Colágeno">Bioestimulador de Colágeno</option>
+                        <option value="Bronzeamento">Bronzeamento</option>
+                        <option value="Limpeza de Pele">Limpeza de Pele</option>
+                        <option value="Harmonização de Glúteos">Harmonização de Glúteos</option>
+                        <option value="Harmonização Íntima">Harmonização Íntima</option>
+                        <option value="Depilação Definitiva - LED">Depilação Definitiva - LED</option>
+                        <option value="Outro Procedimento">Outro Procedimento</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label class="block text-xs font-semibold text-stone-700 mb-1">Melhor Turno para Atendimento</label>
+                    <div class="grid grid-cols-3 gap-2">
+                        <label class="border border-stone-200 rounded-xl p-2.5 text-center cursor-pointer hover:border-brand-500 flex items-center justify-center gap-1">
+                            <input type="radio" name="period" value="Manhã (09h - 12h)" checked class="text-brand-600">
+                            <span class="text-xs text-stone-700">Manhã</span>
+                        </label>
+                        <label class="border border-stone-200 rounded-xl p-2.5 text-center cursor-pointer hover:border-brand-500 flex items-center justify-center gap-1">
+                            <input type="radio" name="period" value="Tarde (13h - 18h)" class="text-brand-600">
+                            <span class="text-xs text-stone-700">Tarde</span>
+                        </label>
+                        <label class="border border-stone-200 rounded-xl p-2.5 text-center cursor-pointer hover:border-brand-500 flex items-center justify-center gap-1">
+                            <input type="radio" name="period" value="Sábado" class="text-brand-600">
+                            <span class="text-xs text-stone-700">Sábado</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div>
+                    <label class="block text-xs font-semibold text-stone-700 mb-1">Observações ou Dúvidas (Opcional)</label>
+                    <textarea id="modalNotes" rows="2" placeholder="Ex: Tenho interesse em cicatrizes de acne / manchas..." class="w-full px-4 py-2.5 rounded-xl border border-stone-200 text-sm focus:ring-2 focus:ring-brand-500 focus:outline-none"></textarea>
+                </div>
+
+                <div class="pt-2">
+                    <button type="submit" class="w-full gold-bg-gradient text-white py-3.5 rounded-xl font-semibold text-sm shadow-md hover:shadow-lg transition-all flex items-center justify-center gap-2">
+                        <i class="fa-brands fa-whatsapp text-lg"></i>
+                        <span>Enviar Agendamento via WhatsApp</span>
+                    </button>
+                    <p class="text-[10px] text-center text-stone-400 mt-2">
+                        🔒 Seus dados não serão compartilhados com terceiros.
+                    </p>
+                </div>
+
+            </form>
+
+        </div>
+    </div>
+
+    <!-- JavaScript Application Logic -->
+    <script>
+        /* List of all treatments requested by prompt with badges & category filters */
+        const servicesData = [
+            {
+                title: "Ultraformer III",
+                category: "tecnologia",
+                badge: "Alta Tecnologia",
+                desc: "Ultrassom micro e macrofocado para lifting facial sem cortes, estímulo profundo de colágeno e tratamento de gordura localizada.",
+                icon: "fa-bolt-lightning"
+            },
+            {
+                title: "Laser Lavieen",
+                category: "tecnologia",
+                badge: "BB Laser Queridinho",
+                desc: "Tecnologia a laser que renova a pele, melhora o tom, reduz poros dilatados, manchas (melasma) e proporciona efeito glow instantâneo.",
+                icon: "fa-sun"
+            },
+            {
+                title: "Endolaser",
+                category: "tecnologia",
+                badge: "Remodelagem Avançada",
+                desc: "Tratamento a laser endodérmico para retração de papada, flacidez e gordura localizada com recuperação rápida e alta precisão.",
+                icon: "fa-wand-magic-sparkles"
+            },
+            {
+                title: "Toxina Botulínica",
+                category: "facial",
+                badge: "Suavização de Linhas",
+                desc: "Prevenção e suavização de rugas dinâmicas na testa, pés de galinha e glabela com efeito natural e relaxamento muscular harmônico.",
+                icon: "fa-sparkles"
+            },
+            {
+                title: "Preenchimento Labial",
+                category: "facial",
+                badge: "Volume & Contorno",
+                desc: "Hidratação profunda, contorno definido e harmonização do volume labial com ácido hialurônico de alta pureza.",
+                icon: "fa-heart"
+            },
+            {
+                title: "Bioestimulador de Colágeno",
+                category: "tecnologia",
+                badge: "Firmeza da Pele",
+                desc: "Estímulo progressivo do próprio colágeno do corpo para combater a flacidez facial e corporal com durabilidade prolongada.",
+                icon: "fa-dna"
+            },
+            {
+                title: "Bronzeamento",
+                category: "corporal",
+                badge: "Destaque & Cor Perfeita",
+                desc: "Protocolo de bronzeamento cuidadoso, uniforme e saudável para conquistar a cor dos sonhos com hidratação intensa da pele.",
+                icon: "fa-sun"
+            },
+            {
+                title: "Limpeza de Pele",
+                category: "facial",
+                badge: "Renovação Cutânea",
+                desc: "Higienização profunda com extração de cravos, desintoxicação celular, máscaras calmas e revitalização completa da cútis.",
+                icon: "fa-droplet"
+            },
+            {
+                title: "Microagulhamento",
+                category: "facial",
+                badge: "Indução de Colágeno",
+                desc: "Estímulo à renovação celular para amenizar manchas, cicatrizes de acne, poros e rugas finas através do drug delivery.",
+                icon: "fa-microscope"
+            },
+            {
+                title: "Secagem de Microvasos",
+                category: "corporal",
+                badge: "Saúde das Pernas",
+                desc: "Procedimento estético injetável para eliminação de vasinhos aparentes (telangiectasias), devolvendo a uniformidade às pernas.",
+                icon: "fa-vial"
+            },
+            {
+                title: "Otomodelação",
+                category: "facial",
+                badge: "Orelha de Abano",
+                desc: "Correção não cirúrgica para harmonização das orelhas, oferecendo mais simetria e elevação da autoimagem com técnica segura.",
+                icon: "fa-ear-listen"
+            },
+            {
+                title: "Emagrecimento",
+                category: "corporal",
+                badge: "Protocolos Integrados",
+                desc: "Estratégias personalizadas para redução de medidas, gordura localizada e aceleração metabólica.",
+                icon: "fa-weight-scale"
+            },
+            {
+                title: "Harmonização de Glúteos",
+                category: "corporal",
+                badge: "Volume & Projeção",
+                desc: "Tratamento para volumização, nivelamento de celulites e firmeza da região glútea com bioestimuladores e preenchedores.",
+                icon: "fa-gem"
+            },
+            {
+                title: "Rinomodelação",
+                category: "facial",
+                badge: "Escultura Nasal",
+                desc: "Ajuste e correção do dorso e ponta nasal através do ácido hialurônico, sem necessidade de cirurgia invasiva.",
+                icon: "fa-face-smile"
+            },
+            {
+                title: "Fios de Sustentação e Colágeno",
+                category: "facial",
+                badge: "Efeito Lifting",
+                desc: "Tração de tecidos caídos e estímulo de colágeno local para reposicionamento do contorno facial e papada.",
+                icon: "fa-ribbon"
+            },
+            {
+                title: "Depilação Definitiva - LED",
+                category: "corporal",
+                badge: "Pele Lisa Sempre",
+                desc: "Tecnologia LED de alta eficiência e menor desconforto para eliminação duradoura dos pelos indesejados.",
+                icon: "fa-lightbulb"
+            },
+            {
+                title: "Harmonização Íntima Feminina",
+                category: "intima",
+                badge: "Estética & Bem-Estar",
+                desc: "Procedimentos para clareamento, firmeza e rejuvenescimento da região íntima feminina com máxima discrição.",
+                icon: "fa-shield-heart"
+            },
+            {
+                title: "Harmonização Íntima Masculina",
+                category: "intima",
+                badge: "Especializado",
+                desc: "Tratamentos focados em estética e simetria para o público masculino com sigilo e protocolo clínico seguro.",
+                icon: "fa-user-shield"
+            },
+            {
+                title: "Rejuvenescimento Facial",
+                category: "facial",
+                badge: "Combinação Exclusiva",
+                desc: "Combinação de protocolos sob medida para devolver viço, firmeza, hidratação e densidade à pele do rosto.",
+                icon: "fa-award"
+            },
+            {
+                title: "Perfiloplastia",
+                category: "facial",
+                badge: "Harmonia Total do Perfil",
+                desc: "Análise e harmonização integrada do perfil facial (queixo, lábios e nariz) para equilíbrio das proporções.",
+                icon: "fa-compass"
+            }
+        ];
+
+        let currentCategory = 'todos';
+
+        // Render services list
+        function renderServices() {
+            const container = document.getElementById('servicesGrid');
+            const searchVal = document.getElementById('serviceSearch').value.toLowerCase().trim();
+            const emptyState = document.getElementById('emptyServices');
+
+            container.innerHTML = '';
+
+            const filtered = servicesData.filter(s => {
+                const matchesCat = (currentCategory === 'todos') || (s.category === currentCategory);
+                const matchesSearch = s.title.toLowerCase().includes(searchVal) || 
+                                      s.desc.toLowerCase().includes(searchVal) ||
+                                      s.badge.toLowerCase().includes(searchVal);
+                return matchesCat && matchesSearch;
+            });
+
+            if (filtered.length === 0) {
+                emptyState.classList.remove('hidden');
+            } else {
+                emptyState.classList.add('hidden');
+                filtered.forEach(s => {
+                    const card = document.createElement('div');
+                    card.className = "bg-white rounded-2xl p-6 border border-brand-200/80 luxury-card flex flex-col justify-between shadow-sm hover:shadow-md";
+                    
+                    card.innerHTML = `
+                        <div class="space-y-3">
+                            <div class="flex items-center justify-between">
+                                <span class="bg-brand-100 text-brand-800 text-[11px] font-semibold px-2.5 py-1 rounded-full border border-brand-200">
+                                    ${s.badge}
+                                </span>
+                                <div class="w-8 h-8 rounded-full bg-brand-50 text-brand-700 flex items-center justify-center text-xs">
+                                    <i class="fa-solid ${s.icon}"></i>
+                                </div>
+                            </div>
+                            <h3 class="font-serif font-bold text-lg text-stone-900">${s.title}</h3>
+                            <p class="text-xs text-stone-600 leading-relaxed">${s.desc}</p>
+                        </div>
+                        <div class="pt-5 mt-4 border-t border-stone-100 flex items-center justify-between">
+                            <span class="text-[11px] text-stone-400 font-medium">Palhoça - SC</span>
+                            <button onclick="openBookingModal('${s.title}')" class="text-xs font-bold text-brand-700 hover:text-brand-900 flex items-center gap-1 transition-colors">
+                                <span>Agendar</span>
+                                <i class="fa-brands fa-whatsapp text-sm"></i>
+                            </button>
+                        </div>
+                    `;
+                    container.appendChild(card);
+                });
+            }
+        }
+
+        // Filter tab selection
+        function setCategory(cat) {
+            currentCategory = cat;
+            const buttons = document.querySelectorAll('.category-tab');
+            buttons.forEach(btn => {
+                btn.classList.remove('bg-brand-900', 'text-white');
+                btn.classList.add('bg-white', 'text-stone-700');
+            });
+            event.target.classList.remove('bg-white', 'text-stone-700');
+            event.target.classList.add('bg-brand-900', 'text-white');
+            renderServices();
+        }
+
+        function filterServices() {
+            renderServices();
+        }
+
+        function resetFilters() {
+            document.getElementById('serviceSearch').value = '';
+            currentCategory = 'todos';
+            renderServices();
+        }
+
+        // Mobile Menu Toggle
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobileMenu');
+            const icon = document.getElementById('menuIcon');
+            if (menu.classList.contains('hidden')) {
+                menu.classList.remove('hidden');
+                icon.className = 'fa-solid fa-xmark text-xl';
+            } else {
+                menu.classList.add('hidden');
+                icon.className = 'fa-solid fa-bars text-xl';
+            }
+        }
+
+        // Modal Open/Close
+        function openBookingModal(preselectedService = null) {
+            const modal = document.getElementById('bookingModal');
+            modal.classList.remove('hidden');
+            if (preselectedService) {
+                const select = document.getElementById('modalService');
+                for (let i = 0; i < select.options.length; i++) {
+                    if (select.options[i].value.toLowerCase().includes(preselectedService.toLowerCase())) {
+                        select.selectedIndex = i;
+                        break;
+                    }
+                }
+            }
+        }
+
+        function closeBookingModal() {
+            document.getElementById('bookingModal').classList.add('hidden');
+        }
+
+        // WhatsApp Form Handler
+        function handleBookingSubmit(e) {
+            e.preventDefault();
+            const name = document.getElementById('modalName').value.trim();
+            const service = document.getElementById('modalService').value;
+            const period = document.querySelector('input[name="period"]:checked').value;
+            const notes = document.getElementById('modalNotes').value.trim();
+
+            let message = `Olá! Meu nome é *${name}*.\n`;
+            message += `Gostaria de agendar uma consulta para: *${service}*\n`;
+            message += `Preferência de horário: *${period}*\n`;
+            if (notes) {
+                message += `Observações: ${notes}\n`;
+            }
+            message += `\nVim pelo site da Efeito Beauty Palhoça.`;
+
+            const encoded = encodeURIComponent(message);
+            const whatsappUrl = `https://wa.me/5548991983830?text=${encoded}`;
+            
+            window.open(whatsappUrl, '_blank');
+            closeBookingModal();
+        }
+
+        // Copy Address helper
+        function copyAddress() {
+            const addressText = "R. Joci José Martins, 247 - Pagani, Palhoça - SC, 88132-148";
+            
+            // Clipboard standard with execCommand fallback
+            if (navigator.clipboard && window.isSecureContext) {
+                navigator.clipboard.writeText(addressText);
+            } else {
+                const textArea = document.createElement("textarea");
+                textArea.value = addressText;
+                document.body.appendChild(textArea);
+                textArea.select();
+                document.execCommand('copy');
+                document.body.removeChild(textArea);
+            }
+
+            const btnText = document.getElementById('copyBtnText');
+            btnText.innerText = "Endereço Copiado! ✓";
+            setTimeout(() => {
+                btnText.innerText = "Copiar Endereço";
+            }, 2500);
+        }
+
+        // Check Open/Closed status dynamically based on time
+        function updateOpenStatus() {
+            const now = new Date();
+            const day = now.getDay(); // 0 = Sun, 6 = Sat
+            const hour = now.getHours();
+            const badge = document.getElementById('openStatusBadge');
+
+            let isOpen = false;
+
+            if (day >= 1 && day <= 5) {
+                // Mon-Fri: 09:00 - 18:00
+                if (hour >= 9 && hour < 18) isOpen = true;
+            } else if (day === 6) {
+                // Sat: 09:00 - 13:00
+                if (hour >= 9 && hour < 13) isOpen = true;
+            }
+
+            if (isOpen) {
+                badge.className = "px-3 py-1 rounded-full text-xs font-semibold bg-emerald-100 text-emerald-800 border border-emerald-300";
+                badge.innerHTML = '<i class="fa-solid fa-circle text-[8px] animate-pulse mr-1"></i> Aberto Agora';
+            } else {
+                badge.className = "px-3 py-1 rounded-full text-xs font-semibold bg-amber-100 text-amber-800 border border-amber-300";
+                badge.innerHTML = 'Fechado · Abre às 09:00';
+            }
+        }
+
+        // On Page Load Initialization
+        window.onload = function() {
+            renderServices();
+            updateOpenStatus();
+            document.getElementById('currentYear').innerText = new Date().getFullYear();
+        };
+    </script>
+</body>
+</html>
